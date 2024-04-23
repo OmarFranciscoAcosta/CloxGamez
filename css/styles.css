@@ -1,142 +1,141 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-
-  .custom-background {
-    background-image: url(https://wallpapercave.com/wp/wp10054793.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-}
-
-nav {
-  background-color: #333333;
-  color: #fff;
-  padding: 15px;
-  text-align: center;
-
-  .navbar-nav .nav-link {
-    color: black;
-
-    &:hover {
-      background-color: #555;
-      color: white;
-    }
-  }
-
-  .navbar-brand img {
-    width: 40px;
-    height: auto;
-    margin-right: 5px;
-    margin-top: 0px;
-    margin-left: 80px;
-    display: flex;
-    justify-content: center;
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
 
-    &:hover {
-      filter: none !important;
+.custom-background {
+  background-image: url(https://wallpapercave.com/wp/wp10054793.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+    nav {
+      background-color: #333333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
     }
+
+    .navbar-nav .nav-link {
+      color: black; 
   }
-
-  a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 0 100px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-
-    &:hover {
+  
+  .navbar-nav .nav-link:hover {
       background-color: #555;
-    }
+      color: white; 
   }
-}
+    
 
-h1, h2 {
-  text-align: center;
-  margin-top: 30px;
+    .navbar-brand img {
+      width: 40px; 
+      height: auto; 
+      margin-right: 5px; 
+      margin-top: 0px;
+      margin-left: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+    .navbar-brand:hover img {
+    filter: none !important; 
 }
+  
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 0 100px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
 
-.cart-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+    .navbar-nav .nav-link:hover {
+      background-color: #555; 
+  }
+
+    h1, h2 {
+      text-align: center;
+      margin-top: 30px;
+  }
+
+  .cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 table {
-  width: 100%;
-  border-collapse: collapse;
+    width: 100%;
+    border-collapse: collapse;
+}
 
-  th, td {
+th, td {
     border-bottom: 1px solid #ccc;
     padding: 10px;
     text-align: left;
-  }
 }
 
 .delete-btn {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #cc0000;
-  }
-}
-
-img {
-  width: 20%;
-  height: auto;
-  margin-top: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 2000px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1px;
-  text-align: center;
-  width: 100%;
-}
-
-.social-icons {
-  p {
-    margin-bottom: 15px;
-    margin-right: 5px;
-  }
-
-  a {
+    background-color: #ff0000;
     color: #fff;
-    text-decoration: none;
-    margin-right: 5px;
-  }
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.card-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.delete-btn:hover {
+    background-color: #cc0000;
+}
 
-  .card {
-    margin-bottom: 20px;
+
+  img {
+      width: 20%; 
+      height: auto; 
+      margin-top: 20px;
+      display: block; 
+      margin-left: auto;
+      margin-right: auto;
+      max-height: 2000px; 
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 1px;
+      text-align: center;
+      width: 100%;
   }
+
+    .social-icons p {
+      margin-bottom: 15px;
+      margin-right: 5px 
+  }
+  
+  .social-icons a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 5px; 
+  }
+
+  .card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    margin-bottom: 20px;
 }
 
 #top {
@@ -155,27 +154,30 @@ footer {
   border-radius: 50%;
   text-decoration: none;
   transition: background-color 0.3s;
+}
 
-  &:before {
-    content: '\25b2';
-  }
 
-  &:hover {
-    background-color: #0056b3;
-  }
+#top::before {
+  content: '\25b2'; 
+}
 
-  &:target:before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 20px solid #007bff;
-  }
+
+#top:hover {
+  background-color: #0056b3;
+}
+
+
+#top:target::before {
+  content: ''; 
+  position: absolute;
+  top: -20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #007bff;
 }
 
 form {
@@ -185,37 +187,39 @@ form {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  label {
-    display: block;
-    margin-bottom: 8px;
-  }
+label {
+  display: block;
+  margin-bottom: 8px;
+}
 
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
-  button {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-    &:hover {
-      background-color: #4caf50;
-    }
-  }
+
+button:hover {
+  background-color: #4caf50;
 }
 
 @media (max-width: 768px) {
   .custom-background {
-    background-attachment: scroll;
+      background-attachment: scroll;
   }
 }
+
